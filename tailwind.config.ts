@@ -9,6 +9,26 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        gpt: {
+          bg: "#FAF7F2",
+          panel: "#E6E0D4",
+          accent: "#C9B6D9",
+          text: "#3E3A40",
+          textSecondary: "#4B4643",
+          userBubble: "#F5E3DC",
+          userBorder: "#E6D5CF",
+          botBubble: "#FFFEFB",
+          // Additional Ghibli-inspired colors
+          sage: "#A9C3B6",
+          lavender: "#D4C5E8",
+          peach: "#F7D7C4",
+          mint: "#B8E6B8",
+          coral: "#FFB3A7",
+          sky: "#B3D9FF",
+          cream: "#F5F0E8",
+          warm: "#E8D5B7",
+          soft: "#F0E6D2",
+        },
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
