@@ -19,10 +19,10 @@ const About = () => {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-          <Card className="border-0 bg-gpt-sage/20 backdrop-blur-sm shadow-sm hover:bg-gpt-sage/30 transition-colors">
+          <Card className="border border-gpt-panel bg-gpt-panel/70 backdrop-blur-sm shadow-sm hover:bg-gpt-panel transition-colors">
             <CardContent className="p-6 text-center">
-              <div className="w-12 h-12 bg-gpt-sage/30 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <MessageSquare className="h-6 w-6 text-gpt-sage" />
+              <div className="w-12 h-12 bg-gpt-panel rounded-lg flex items-center justify-center mx-auto mb-4 border border-gpt-panel/80">
+                <MessageSquare className="h-6 w-6 text-gpt-text" />
               </div>
               <h3 className="font-semibold text-gpt-text mb-2">
                 Interactive Conversations
@@ -34,10 +34,10 @@ const About = () => {
             </CardContent>
           </Card>
 
-          <Card className="border-0 bg-gpt-lavender/20 backdrop-blur-sm shadow-sm hover:bg-gpt-lavender/30 transition-colors">
+          <Card className="border border-gpt-panel bg-gpt-panel/70 backdrop-blur-sm shadow-sm hover:bg-gpt-panel transition-colors">
             <CardContent className="p-6 text-center">
-              <div className="w-12 h-12 bg-gpt-lavender/30 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <Zap className="h-6 w-6 text-gpt-lavender" />
+              <div className="w-12 h-12 bg-gpt-panel rounded-lg flex items-center justify-center mx-auto mb-4 border border-gpt-panel/80">
+                <Zap className="h-6 w-6 text-gpt-text" />
               </div>
               <h3 className="font-semibold text-gpt-text mb-2">
                 Multi-Model Support
@@ -49,10 +49,10 @@ const About = () => {
             </CardContent>
           </Card>
 
-          <Card className="border-0 bg-gpt-peach/20 backdrop-blur-sm shadow-sm hover:bg-gpt-peach/30 transition-colors">
+          <Card className="border border-gpt-panel bg-gpt-panel/70 backdrop-blur-sm shadow-sm hover:bg-gpt-panel transition-colors">
             <CardContent className="p-6 text-center">
-              <div className="w-12 h-12 bg-gpt-peach/30 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <Users className="h-6 w-6 text-gpt-peach" />
+              <div className="w-12 h-12 bg-gpt-panel rounded-lg flex items-center justify-center mx-auto mb-4 border border-gpt-panel/80">
+                <Users className="h-6 w-6 text-gpt-text" />
               </div>
               <h3 className="font-semibold text-gpt-text mb-2">
                 User-Centric Design
@@ -64,10 +64,10 @@ const About = () => {
             </CardContent>
           </Card>
 
-          <Card className="border-0 bg-gpt-mint/20 backdrop-blur-sm shadow-sm hover:bg-gpt-mint/30 transition-colors">
+          <Card className="border border-gpt-panel bg-gpt-panel/70 backdrop-blur-sm shadow-sm hover:bg-gpt-panel transition-colors">
             <CardContent className="p-6 text-center">
-              <div className="w-12 h-12 bg-gpt-mint/30 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <Shield className="h-6 w-6 text-gpt-mint" />
+              <div className="w-12 h-12 bg-gpt-panel rounded-lg flex items-center justify-center mx-auto mb-4 border border-gpt-panel/80">
+                <Shield className="h-6 w-6 text-gpt-text" />
               </div>
               <h3 className="font-semibold text-gpt-text mb-2">
                 Privacy First

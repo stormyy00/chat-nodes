@@ -5,12 +5,17 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Plus, Settings, MessageSquare } from "lucide-react";
+import {
+  Sidebar,
+  SidebarHeader,
+  SidebarContent,
+} from "@/components/ui/sidebar";
 import ConversationList from "./conversation-list";
 import ChatMessages from "./chat-messages";
-import MessageInput from "./message-Input";
+import MessageInput from "./message-input";
 import ModelSelector from "./model-selector";
 import ModelManagement from "./model-management";
-import { api } from "@/lib/api";
+import { api } from "@/utils/api";
 
 interface Conversation {
   id: string;
@@ -238,10 +243,10 @@ const ChatInference = () => {
   };
 
   return (
-    <div className="flex h-full overflow-y-auto bg-gpt-bg text-gpt-text">
+    <div className="flex h-screen overflow-hidden bg-gpt-bg text-gpt-text w-full">
       {/* Sidebar */}
-      <div className="w-80 flex-shrink-0 border-r border-gpt-panel bg-gpt-panel/80 backdrop-blur-sm flex flex-col shadow-lg sticky top-0 h-screen min-h-0">
-        <div className="p-4 border-b border-gpt-panel bg-gpt-panel/90 text-gpt-text">
+      <Sidebar>
+        <SidebarHeader className="bg-gpt-panel/90 text-gpt-text">
           <div className="flex items-center justify-between mb-4">
             <h1 className="text-xl font-bold flex items-center gap-2">
               <MessageSquare className="h-6 w-6" />
@@ -261,16 +266,17 @@ const ChatInference = () => {
             selectedModel={selectedModel}
             onModelSelect={setSelectedModel}
           />
-        </div>
-
-        <ConversationList
-          conversations={conversations}
-          activeConversation={activeConversation}
-          onConversationSelect={setActiveConversation}
-          onDeleteConversation={handleDeleteConversation}
-          onEditConversation={handleEditConversation}
-        />
-      </div>
+        </SidebarHeader>
+        <SidebarContent>
+          <ConversationList
+            conversations={conversations}
+            activeConversation={activeConversation}
+            onConversationSelect={setActiveConversation}
+            onDeleteConversation={handleDeleteConversation}
+            onEditConversation={handleEditConversation}
+          />
+        </SidebarContent>
+      </Sidebar>
 
       {/* Main Chat Area */}
       <div className="flex-1 flex flex-col bg-gpt-bg/70 backdrop-blur-sm min-h-0">
@@ -309,7 +315,7 @@ const ChatInference = () => {
                   </h2>
                 </div>
 
-                <div className="flex-1 min-h-full flex flex-col">
+                <div className="flex-1 min-h-0 flex flex-col">
                   <ChatMessages messages={messages} isLoading={isLoading} />
                 </div>
 

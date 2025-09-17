@@ -7,10 +7,10 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <section className="relative py-20 bg-gradient-to-br from-gpt-bg via-gpt-cream to-gpt-soft">
+    <section className="relative py-20 bg-gpt-bg">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 bg-gpt-sage/20 text-gpt-sage px-4 py-2 rounded-full text-sm font-medium mb-6">
+          <div className="inline-flex items-center gap-2 bg-gpt-panel text-gpt-text px-4 py-2 rounded-full text-sm font-medium mb-6 border border-gpt-panel/80">
             <Sparkles className="h-4 w-4" />
             Interactive AI Conversations
           </div>
@@ -27,7 +27,7 @@ const Hero = () => {
             </span>
           </h1>
 
-          <p className="text-xl text-gpt-textSecondary max-w-3xl mx-auto mb-8 leading-relaxed">
+          <p className="text-xl text-gpt-text max-w-3xl mx-auto mb-8 leading-relaxed">
             Experience the future of AI conversations with interactive nodes,
             intelligent topic branching, and seamless integration with your
             favorite AI models.
@@ -57,10 +57,10 @@ const Hero = () => {
         </div>
 
         <div className="grid md:grid-cols-3 gap-6 mt-16">
-          <Card className="border-0 bg-gpt-sky/20 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300">
+          <Card className="border border-gpt-panel bg-gpt-panel/70 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300">
             <CardContent className="p-6 text-center">
-              <div className="w-16 h-16 bg-gpt-sky/30 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <Sparkles className="h-8 w-8 text-gpt-sky" />
+              <div className="w-16 h-16 bg-gpt-panel rounded-2xl flex items-center justify-center mx-auto mb-4 border border-gpt-panel/80">
+                <Sparkles className="h-8 w-8 text-gpt-text" />
               </div>
               <h3 className="text-lg font-semibold text-gpt-text mb-2">
                 Smart Branching
@@ -72,10 +72,10 @@ const Hero = () => {
             </CardContent>
           </Card>
 
-          <Card className="border-0 bg-gpt-mint/20 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300">
+          <Card className="border border-gpt-panel bg-gpt-panel/70 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300">
             <CardContent className="p-6 text-center">
-              <div className="w-16 h-16 bg-gpt-mint/30 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <ArrowRight className="h-8 w-8 text-gpt-mint" />
+              <div className="w-16 h-16 bg-gpt-panel rounded-2xl flex items-center justify-center mx-auto mb-4 border border-gpt-panel/80">
+                <ArrowRight className="h-8 w-8 text-gpt-text" />
               </div>
               <h3 className="text-lg font-semibold text-gpt-text mb-2">
                 Multi-Model
@@ -87,10 +87,10 @@ const Hero = () => {
             </CardContent>
           </Card>
 
-          <Card className="border-0 bg-gpt-coral/20 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300">
+          <Card className="border border-gpt-panel bg-gpt-panel/70 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300">
             <CardContent className="p-6 text-center">
-              <div className="w-16 h-16 bg-gpt-coral/30 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <Sparkles className="h-8 w-8 text-gpt-coral" />
+              <div className="w-16 h-16 bg-gpt-panel rounded-2xl flex items-center justify-center mx-auto mb-4 border border-gpt-panel/80">
+                <Sparkles className="h-8 w-8 text-gpt-text" />
               </div>
               <h3 className="text-lg font-semibold text-gpt-text mb-2">
                 Beautiful Design

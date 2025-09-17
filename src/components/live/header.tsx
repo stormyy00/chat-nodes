@@ -5,7 +5,7 @@ import { MessageSquare } from "lucide-react";
 
 const Header = () => {
   return (
-    <header className="sticky top-0 z-30 w-full backdrop-blur-md bg-gpt-bg/80 border-b border-gpt-panel/50">
+    <header className="sticky top-0 z-30 w-full backdrop-blur-md bg-gpt-panel/90 border-b border-gpt-panel">
       <div className="mx-auto max-w-6xl px-4 h-14 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 text-gpt-text">
           <MessageSquare className="h-5 w-5 text-gpt-accent" />

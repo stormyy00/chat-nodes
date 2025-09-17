@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
+  darkMode: ["class"],
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -18,7 +19,6 @@ const config: Config = {
           userBubble: "#F5E3DC",
           userBorder: "#E6D5CF",
           botBubble: "#FFFEFB",
-          // Additional Ghibli-inspired colors
           sage: "#A9C3B6",
           lavender: "#D4C5E8",
           peach: "#F7D7C4",
@@ -31,6 +31,16 @@ const config: Config = {
         },
         background: "var(--background)",
         foreground: "var(--foreground)",
+        sidebar: {
+          DEFAULT: "#E6E0D4",
+          foreground: "hsl(var(--sidebar-foreground))",
+          primary: "hsl(var(--sidebar-primary))",
+          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
+          accent: "hsl(var(--sidebar-accent))",
+          "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
+          border: "hsl(var(--sidebar-border))",
+          ring: "hsl(var(--sidebar-ring))",
+        },
       },
     },
   },

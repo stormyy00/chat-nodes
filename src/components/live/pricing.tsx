@@ -7,10 +7,7 @@ import Link from "next/link";
 
 const Pricing = () => {
   return (
-    <section
-      id="pricing"
-      className="py-16 bg-gradient-to-br from-gpt-soft via-gpt-cream to-gpt-bg"
-    >
+    <section id="pricing" className="py-16 bg-gpt-bg">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gpt-text mb-4">
@@ -24,10 +21,10 @@ const Pricing = () => {
 
         <div className="grid md:grid-cols-3 gap-8">
           {/* Free Plan */}
-          <Card className="border-0 bg-gpt-sage/10 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300">
+          <Card className="border border-gpt-panel bg-gpt-panel/70 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300">
             <CardHeader className="text-center pb-4">
-              <div className="w-12 h-12 bg-gpt-sage/20 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <Zap className="h-6 w-6 text-gpt-sage" />
+              <div className="w-12 h-12 bg-gpt-panel rounded-lg flex items-center justify-center mx-auto mb-4 border border-gpt-panel/80">
+                <Zap className="h-6 w-6 text-gpt-text" />
               </div>
               <CardTitle className="text-xl text-gpt-text">Free</CardTitle>
               <div className="text-3xl font-bold text-gpt-text">$0</div>
@@ -71,15 +68,15 @@ const Pricing = () => {
           </Card>
 
           {/* Pro Plan */}
-          <Card className="border-2 border-gpt-lavender/50 bg-gpt-lavender/10 backdrop-blur-sm shadow-xl hover:shadow-2xl transition-all duration-300 relative">
+          <Card className="border-2 border-gpt-panel bg-gpt-panel/80 backdrop-blur-sm shadow-xl hover:shadow-2xl transition-all duration-300 relative">
             <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-              <span className="bg-gpt-lavender text-gpt-text px-3 py-1 rounded-full text-xs font-medium">
+              <span className="bg-gpt-panel text-gpt-text px-3 py-1 rounded-full text-xs font-medium border border-gpt-panel/80">
                 Most Popular
               </span>
             </div>
             <CardHeader className="text-center pb-4 pt-6">
-              <div className="w-12 h-12 bg-gpt-lavender/20 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <Crown className="h-6 w-6 text-gpt-lavender" />
+              <div className="w-12 h-12 bg-gpt-panel rounded-lg flex items-center justify-center mx-auto mb-4 border border-gpt-panel/80">
+                <Crown className="h-6 w-6 text-gpt-text" />
               </div>
               <CardTitle className="text-xl text-gpt-text">Pro</CardTitle>
               <div className="text-3xl font-bold text-gpt-text">$19</div>
@@ -127,10 +124,10 @@ const Pricing = () => {
           </Card>
 
           {/* Enterprise Plan */}
-          <Card className="border-0 bg-gpt-peach/10 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300">
+          <Card className="border border-gpt-panel bg-gpt-panel/70 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300">
             <CardHeader className="text-center pb-4">
-              <div className="w-12 h-12 bg-gpt-peach/20 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <Sparkles className="h-6 w-6 text-gpt-peach" />
+              <div className="w-12 h-12 bg-gpt-panel rounded-lg flex items-center justify-center mx-auto mb-4 border border-gpt-panel/80">
+                <Sparkles className="h-6 w-6 text-gpt-text" />
               </div>
               <CardTitle className="text-xl text-gpt-text">
                 Enterprise
